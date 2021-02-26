@@ -1,0 +1,10 @@
+[Unit]
+Description=Reboot test
+
+[Service]
+ExecStart=/usr/bin/reboot_test.sh
+KillMode=process
+Type=idle
+
+[Install]
+WantedBy=multi-user.target
