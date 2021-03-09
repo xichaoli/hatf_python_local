@@ -39,6 +39,7 @@ logs_dir = top_dir + "/logs/" + board_model + "/" + board_serial
 result_dir = top_dir + "/results/" + board_model + "/" + board_serial
 report_dir = top_dir + "/reports/" + board_model + "/" + board_serial
 
+os.environ["LOGS_DIR"] = logs_dir
 
 def show_top_menu():
     w.title = "Select test type"
